@@ -586,7 +586,7 @@ function FamilyPortal({ token }) {
   return (
     <div style={{minHeight:"100vh",background:"var(--cream)"}}>
       <div className="portal-hero">
-        <img src="/logo.png" alt="Logo" style={{height:22}} />
+        <img src="/logo.png" alt="Logo" style={{height:60}} />
         <div className="portal-title"><span className="portal-title-accent">Mortality Files</span> Casting Portal</div>
         <div style={{color:"#FF47E2",fontFamily:"'Cinzel',serif",fontSize:12,letterSpacing:2,textTransform:"uppercase",margin:"8px 0 6px"}}>{family.name} Family</div>
         <div className="portal-sub">Please complete all required documents below</div>
