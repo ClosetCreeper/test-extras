@@ -817,7 +817,7 @@ export default function App() {
     <div>
       <style>{CSS}</style>
       <nav className="nav">
-        <div className="nav-logo"><span style={{fontSize:22}}>💀</span><span>MORTALITY FILES <span className="nav-logo-accent">CASTING</span></span></div>
+        <div className="nav-logo"><img src="/logo.png" alt="Logo" style={{height:22}} /><span>MORTALITY FILES <span className="nav-logo-accent">CASTING</span></span></div>
         <div className="nav-tabs">
           {[{id:"families",label:"👨‍👩‍👧‍👦 Families"},{id:"templates",label:"📋 Templates"},{id:"documents",label:"📄 Signed Docs"}].map(t=>(
             <button key={t.id} className={`nav-tab ${tab===t.id?"active":""}`} onClick={()=>setTab(t.id)}>{t.label}</button>
