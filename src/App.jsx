@@ -578,7 +578,7 @@ function FamilyPortal({ token }) {
   };
 
   if (loading) return <div style={{display:"flex",alignItems:"center",justifyContent:"center",height:"100vh",flexDirection:"column",gap:14,background:"#100142"}}><div style={{width:38,height:38,border:"3px solid #FF47E2",borderTopColor:"transparent",borderRadius:"50%",animation:"spinA .8s linear infinite"}}/><p style={{color:"rgba(255,255,255,0.6)",fontFamily:"'DM Sans',sans-serif"}}>Loading…</p></div>;
-  if (error) return <div style={{display:"flex",alignItems:"center",justifyContent:"center",height:"100vh",background:"#100142"}}><div style={{textAlign:"center"}}><div style={{fontSize:46,marginBottom:14}}>💀</div><p style={{color:"#FF47E2",fontSize:17,fontFamily:"'DM Sans',sans-serif"}}>{error}</p></div></div>;
+  if (error) return <div style={{display:"flex",alignItems:"center",justifyContent:"center",height:"100vh",background:"#100142"}}><div style={{textAlign:"center"}}><img src="/logo.png" alt="Logo" style={{height:22}} /><p style={{color:"#FF47E2",fontSize:17,fontFamily:"'DM Sans',sans-serif"}}>{error}</p></div></div>;
 
   const completed=assignments.filter(a=>a.status==="completed").length;
   const total=assignments.length;
@@ -586,7 +586,7 @@ function FamilyPortal({ token }) {
   return (
     <div style={{minHeight:"100vh",background:"var(--cream)"}}>
       <div className="portal-hero">
-        <div style={{fontSize:38,marginBottom:12}}>💀</div>
+        <img src="/logo.png" alt="Logo" style={{height:22}} />
         <div className="portal-title"><span className="portal-title-accent">Mortality Files</span> Casting Portal</div>
         <div style={{color:"#FF47E2",fontFamily:"'Cinzel',serif",fontSize:12,letterSpacing:2,textTransform:"uppercase",margin:"8px 0 6px"}}>{family.name} Family</div>
         <div className="portal-sub">Please complete all required documents below</div>
