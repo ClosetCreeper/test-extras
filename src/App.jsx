@@ -520,7 +520,7 @@ function TemplateBuilder({ template, onSave, onCancel }) {
         <div className="builder-main" onMouseMove={onMM} onMouseUp={onMU} onClick={()=>setSelectedId(null)}>
           {!pdfUrl?(
             <div style={{display:"flex",alignItems:"center",justifyContent:"center",flexDirection:"column",gap:16,color:"rgba(255,255,255,0.4)"}}>
-              <span style={{fontSize:56}}>💀</span><p style={{fontSize:16}}>Upload a PDF to get started</p>
+              <img src="/logo.png" alt="Logo" style={{height:22}} /><p style={{fontSize:16}}>Upload a PDF to get started</p>
               <label className="btn btn-pink" style={{cursor:"pointer"}}>📎 Upload PDF<input type="file" accept="application/pdf" style={{display:"none"}} onChange={handleUpload} /></label>
             </div>
           ):(
