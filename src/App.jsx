@@ -33,7 +33,7 @@ const SCRIPT_FONTS = [
 ];
 
 const CSS = `
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Parisienne&family=Satisfy&family=Cinzel:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Parisienne&family=Satisfy&family=Google Sans:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --deep:#100142;--deep2:#1a0260;--pink:#FF47E2;
@@ -46,7 +46,7 @@ const CSS = `
 body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);min-height:100vh}
 
 .nav{background:var(--deep);padding:0 28px;display:flex;align-items:center;justify-content:space-between;height:62px;position:sticky;top:0;z-index:200;box-shadow:0 2px 24px rgba(255,71,226,0.2);border-bottom:1px solid rgba(255,71,226,0.3)}
-.nav-logo{font-family:'Cinzel',serif;font-size:17px;color:#fff;letter-spacing:1.5px;display:flex;align-items:center;gap:10px}
+.nav-logo{font-family:'Google Sans',serif;font-size:17px;color:#fff;letter-spacing:1.5px;display:flex;align-items:center;gap:10px}
 .nav-logo-accent{color:#FF47E2}
 .nav-tabs{display:flex;gap:4px}
 .nav-tab{padding:7px 16px;border-radius:8px;background:transparent;border:none;color:rgba(255,255,255,0.55);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;cursor:pointer;transition:all .2s}
@@ -54,7 +54,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);
 .nav-tab.active{background:#FF47E2;color:var(--deep);font-weight:700}
 
 .page{max-width:1100px;margin:0 auto;padding:36px 24px}
-.page-title{font-family:'Cinzel',serif;font-size:27px;color:var(--deep);margin-bottom:6px;letter-spacing:.5px}
+.page-title{font-family:'Google Sans',serif;font-size:27px;color:var(--deep);margin-bottom:6px;letter-spacing:.5px}
 .page-sub{color:var(--text2);font-size:15px;margin-bottom:28px}
 .card{background:var(--white);border-radius:var(--rl);border:1px solid var(--border);box-shadow:var(--sh);overflow:hidden}
 .card-body{padding:24px}
@@ -87,7 +87,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);
 .modal{background:#fff;border-radius:var(--rl);width:100%;max-width:700px;max-height:92vh;overflow-y:auto;box-shadow:var(--sh2);animation:slideUp .25s ease}
 .modal-lg{max-width:900px}.modal-xl{max-width:1100px}
 .modal-hd{padding:22px 26px;border-bottom:1px solid #ede8f8;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:#fff;z-index:2}
-.modal-title{font-family:'Cinzel',serif;font-size:19px;color:var(--deep)}
+.modal-title{font-family:'Google Sans',serif;font-size:19px;color:var(--deep)}
 .modal-body{padding:26px}.modal-ft{padding:18px 26px;border-top:1px solid #ede8f8;display:flex;gap:10px;justify-content:flex-end}
 @keyframes slideUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
 
@@ -109,7 +109,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);
 
 .portal-hero{background:var(--deep);padding:52px 24px;text-align:center;color:#fff;position:relative;overflow:hidden}
 .portal-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(255,71,226,0.18) 0%,transparent 70%);pointer-events:none}
-.portal-title{font-family:'Cinzel',serif;font-size:28px;color:#fff;margin-bottom:6px;letter-spacing:1px}
+.portal-title{font-family:'Google Sans',serif;font-size:28px;color:#fff;margin-bottom:6px;letter-spacing:1px}
 .portal-title-accent{color:#FF47E2}
 .portal-sub{color:rgba(255,255,255,0.6);font-size:15px}
 .task-card{background:#fff;border:1.5px solid #ede8f8;border-radius:var(--r);padding:18px;display:flex;align-items:center;justify-content:space-between;transition:all .2s}
@@ -588,14 +588,14 @@ function FamilyPortal({ token }) {
       <div className="portal-hero">
         <img src="/logo.png" alt="Logo" style={{height:60}} />
         <div className="portal-title"><span className="portal-title-accent">Mortality Files</span> Casting Portal</div>
-        <div style={{color:"#FF47E2",fontFamily:"'Cinzel',serif",fontSize:12,letterSpacing:2,textTransform:"uppercase",margin:"8px 0 6px"}}>{family.name} Family</div>
+        <div style={{color:"#FF47E2",fontFamily:"'Google Sans',serif",fontSize:12,letterSpacing:2,textTransform:"uppercase",margin:"8px 0 6px"}}>{family.name} Family</div>
         <div className="portal-sub">Please complete all required documents below</div>
       </div>
       <div className="page" style={{maxWidth:720}}>
         {total>0&&completed===total?(
           <div className="success-screen">
             <div className="success-icon">✅</div>
-            <h2 style={{fontFamily:"'Cinzel',serif",fontSize:22,marginBottom:10,color:"#100142"}}>All Done!</h2>
+            <h2 style={{fontFamily:"'Google Sans',serif",fontSize:22,marginBottom:10,color:"#100142"}}>All Done!</h2>
             <p style={{color:"var(--text2)",fontSize:15}}>All documents have been signed. Thank you!</p>
           </div>
         ):(
@@ -657,7 +657,7 @@ function TemplatesTab() {
       {templates.length===0?<div className="empty-state"><div className="icon">📋</div><p>No templates yet.</p></div>:(
         <div className="grid-2">{templates.map(t=>(
           <div key={t.id} className="card"><div className="card-body">
-            <h3 style={{fontFamily:"'Cinzel',serif",fontSize:18,marginBottom:6,color:"#100142"}}>{t.name}</h3>
+            <h3 style={{fontFamily:"'Google Sans',serif",fontSize:18,marginBottom:6,color:"#100142"}}>{t.name}</h3>
             {t.description&&<p className="text-muted" style={{marginBottom:10}}>{t.description}</p>}
             <div style={{display:"flex",gap:6,flexWrap:"wrap",marginBottom:16}}>
               {(t.fields||[]).map(f=><span key={f.id} className="tag">{FIELD_TYPES.find(ft=>ft.type===f.type)?.icon} {f.label}</span>)}
@@ -766,7 +766,7 @@ function DocumentsTab() {
 function SetupCheck({ children }) {
   if (SUPABASE_URL==="https://YOUR_PROJECT.supabase.co") return(
     <div className="page" style={{maxWidth:700,marginTop:50}}><div className="card"><div className="card-body">
-      <h2 style={{fontFamily:"'Cinzel',serif",fontSize:22,marginBottom:14,color:"#100142"}}>⚙️ Setup Required</h2>
+      <h2 style={{fontFamily:"'Google Sans',serif",fontSize:22,marginBottom:14,color:"#100142"}}>⚙️ Setup Required</h2>
       <div className="alert alert-warn">Configure your Supabase credentials before using this app.</div>
       <p style={{marginBottom:14,lineHeight:1.7}}>Open <code>src/App.jsx</code> and replace these at the top:</p>
       <div style={{background:"#100142",color:"#FF47E2",padding:16,borderRadius:10,fontFamily:"monospace",fontSize:13,marginBottom:20}}>
