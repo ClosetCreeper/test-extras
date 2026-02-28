@@ -707,7 +707,7 @@ function FamiliesTab() {
               <td><button className="btn btn-outline btn-sm" onClick={()=>copyLink(f.link_token)}>{copied===f.link_token?"✅ Copied!":"📋 Copy Link"}</button></td>
               <td><div className="flex gap-2"><button className="btn btn-pink btn-sm" onClick={()=>openAssign(f)}>Manage</button><button className="btn btn-outline btn-sm" onClick={()=>window.open(`${window.location.origin}${window.location.pathname}?family=${f.link_token}`,"_blank")}>Preview</button><button className="btn btn-danger btn-sm" onClick={()=>deleteFamily(f.id)}>🗑</button></div></td>
             </tr>
-          );})</tbody>
+          );})}</tbody>
         </table></div>
       )}
       {showCreate&&<div className="overlay"><div className="modal">
