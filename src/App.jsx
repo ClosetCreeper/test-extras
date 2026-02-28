@@ -10,8 +10,8 @@ import { PDFDocument, rgb, StandardFonts } from "pdf-lib";
 pdfjsLib.GlobalWorkerOptions.workerSrc =
   "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
 
-const SUPABASE_URL = "https://YOUR_PROJECT.supabase.co";
-const SUPABASE_ANON_KEY = "YOUR_ANON_KEY";
+const SUPABASE_URL = "https://kdnhetzdatwgbqiocikf.supabase.co";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtkbmhldHpkYXR3Z2JxaW9jaWtmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzIzMTExMDAsImV4cCI6MjA4Nzg4NzEwMH0.G9xlu93KCK64V1VDc80uKk3jPVoV4YgKruumHStF1yU";
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 const FIELD_TYPES = [
